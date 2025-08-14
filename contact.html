@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SK Nexora — Contact</title>
+    <meta name="description" content="Contact us for quotes, partnerships, and support." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">SK Nexora</a>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a class="cta-link active" href="contact.html">Contact</a>
+        </nav>
+        <button class="menu-toggle" id="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Contact</h1>
+          <p class="lead">Tell us about your project. We'll get back within 1 business day.</p>
+        </div>
+      </section>
+
+      <section class="content">
+        <div class="container grid two">
+          <form class="card form" id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+              <small class="error" data-for="name"></small>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+              <small class="error" data-for="email"></small>
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+              <small class="error" data-for="message"></small>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+            <p class="muted small" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="aside">
+            <div class="card">
+              <h3>Reach us</h3>
+              <ul class="bulleted">
+                <li>Email: sukcs01@gmail.com</li>
+                <li>Phone: +92 3351443344</li>
+                <li>Hours: Mon–Fri, 9am–5pm</li>
+                <li>Saturday and Sunday Off</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="logo" href="index.html">SK Nexora</a>
+          <p class="muted">© <span id="year"></span> SK Nexora. All rights reserved.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+  </html>
+
+
